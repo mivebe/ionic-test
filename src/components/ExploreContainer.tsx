@@ -1,10 +1,15 @@
-import './ExploreContainer.css';
+// Styles
+import '../styles/ExploreContainer.css';
+
+// Types
+import { FC } from 'react';
 
 interface ContainerProps {
   name: string;
 }
 
-const ExploreContainer: React.FC<ContainerProps> = ({ name }) => {
+const ExploreContainer: FC<ContainerProps> = ({ name }) => {
+
   return (
     <div className="container">
       <strong>{name}</strong>
